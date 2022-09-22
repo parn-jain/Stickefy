@@ -167,6 +167,9 @@ a {
 }
 
 .fa{
+    /* position: relative; */
+    /* position: absolute; */
+    /* top: 10px; */
     display: flex;
     height:100%;
     color: white;
@@ -196,6 +199,11 @@ a {
     margin-left: 210px;
 
     color: white;
+}
+
+.no{
+    color: white;
+    display: inline-block;
 }
 
 
