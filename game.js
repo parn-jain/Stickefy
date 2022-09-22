@@ -1,9 +1,9 @@
-let html = document.getElementsByClassName("test").innerHTML;
+let html = document.getElementById("test").innerHTML;
 console.log(html);
-// const a1 = new Audio(`songs/${html}.mp3`);
-const a1 = new Audio();
+const a1 = new Audio(`songs/${html}.mp3`);
+// const a1 = new Audio();
+// a1.src = `songs/${num}.mp3`;
 function first(num) {
-    a1.src = `songs/${num}.mp3`;
     var play = document.getElementsByClassName("fa");
     console.log(play[num].classList.value.split(" ")[1])
     if (play[num].classList.value.split(" ")[1] == "fa-play") {
