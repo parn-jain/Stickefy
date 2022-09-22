@@ -166,6 +166,14 @@ a {
     /* grid-row: 1 / span 2; */
 }
 
+.fafake{
+    visibility: visible !important;
+    /* color:red; */
+}
+.pfake{
+    visibility: hidden;
+}
+
 .fa{
     /* position: relative; */
     /* position: absolute; */
@@ -175,7 +183,9 @@ a {
     color: white;
     margin-left: 40px;
     margin-right: 40px;
-    /* justify-content: center; */
+    visibility: hidden;
+    /* visibility:hidden;     */
+    /* justify-content: center;  */
     /* align-items: center; */
 }
 
@@ -202,8 +212,12 @@ a {
 }
 
 .no{
+    position: absolute;
     color: white;
     display: inline-block;
+    font-weight: bold;
+    font-size: 23px;
+    margin-left:39px;
 }
 
 

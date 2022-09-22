@@ -28,3 +28,23 @@ function first(num) {
 }
 
 
+var trying = document.getElementsByClassName("fa");
+var happy = document.getElementsByClassName("no");
+function hover(hoi)
+{
+    console.log("hello , i am working");
+    trying[hoi].classList.add("fafake");
+    happy[hoi].classList.add("pfake")
+    
+}
+
+function leave(hat)
+{
+    console.log("good bye");
+    trying[hat].classList.remove("fafake");
+    happy[hat].classList.remove("pfake");
+
+
+}
+
+
