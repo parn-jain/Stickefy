@@ -4,6 +4,7 @@ let html = document.getElementById("test").innerHTML;
 // console.log(html);
 const a1 = new Audio();
 let number = -1;
+var bars = document.getElementsByClassName("playing");
 function first(num) {
     var play = document.getElementsByClassName("fa");
     console.log(play[num].classList.value.split(" ")[1])
@@ -18,6 +19,7 @@ function first(num) {
         }
         a1.play();
         
+        
     } else {
         for (let i = 0; i < play.length; i++) {
             play[i].classList.replace("fa-pause", "fa-play");
@@ -25,6 +27,22 @@ function first(num) {
         play[num].classList.replace("fa-pause", "fa-play");
         a1.pause();
     }
+
+    if(a1.played)
+        {
+            console.log("hhhhhhhhhh");
+            for (let j = 0; j < bars.length; j++)
+            {
+                bars[j].classList.remove("last");
+            }
+            bars[num].classList.add("last");
+            
+        }
+        if(a1.paused)
+        {
+            bars[num].classList.remove("last");
+
+        }
 }
 
 

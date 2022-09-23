@@ -220,4 +220,12 @@ a {
     margin-left:39px;
 }
 
+.playing{
+    position: absolute;
+    visibility:hidden;
+}
+
+.last{
+    visibility: visible !important;
+}
 
